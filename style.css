@@ -1,2 +1,78 @@
 /* @mediakreasiid content & rido martupa simbolon */
 
+/* Import font from google font */
+/* Import font dari google font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+
+/* reset style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Navbar style */
+.navbar {
+    background-color: rgb(29, 33, 34);
+    padding: 25px 80px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 3fr 1fr;
+    /* grid-gap: 200px; */
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 1.5em;
+    min-width: 300px;
+    color: rgb(190, 174, 30);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-link a {
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: rgba(250,250,250,0.8);
+    cursor: pointer;
+}
+
+.nav-auth a {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: rgba(250,250,250,0.8);
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+.nav-auth span {
+    color: rgba(250,250,250,0.8);
+}
+
+.active a{
+    border-bottom: 3px solid rgb(190, 174, 30);
+    color: rgba(255,255,255,1);
+}
+
+.logo:hover {
+    color : rgba(190, 174, 30, 0.7);
+    cursor: pointer;
+    transition: color .2s ease-in .3s;
+}
+
+.nav-link a:hover, .nav-auth a:hover {
+    color: rgba(250,250,250,1);
+    cursor: pointer;
+    transition: color .2s ease-in .3s;
+}
+/* End navbar style */
+
+/* Hero style */
+
+/* End hero style */
