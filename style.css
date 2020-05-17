@@ -14,13 +14,12 @@
 
 /* Navbar style */
 .navbar {
-    background-color: rgb(29, 33, 34);
+    background-color: rgb(20, 20, 20);
     padding: 15px 80px;
     display: grid;
     align-items: center;
     justify-content: center;
     grid-template-columns: 1fr 3fr 1fr;
-    /* grid-gap: 200px; */
 }
 
 .logo {
@@ -66,7 +65,7 @@
 }
 
 .active a{
-    border-bottom: 3px solid rgb(190, 174, 30);
+    border-bottom: 2px solid rgb(190, 174, 30);
     color: rgba(255,255,255,1);
 }
 
@@ -89,12 +88,14 @@
     background-color: rgb(240, 239, 239);
     display: grid;
     grid-template-columns: 2fr 1fr;
-    box-shadow: 0 10px 20px 0 rgb(225, 226, 226);
 }
 
 .hero-main {
-    height: 400px;
+    min-height: 400px;
     background-image: url("https://images.unsplash.com/photo-1490114538077-0a7f8cb49891?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 40px 80px;
     color: rgb(240, 239, 239);
     display: flex;
@@ -136,38 +137,31 @@
 }
 
 .hero-secondary {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    padding: 20px;
+    display: grid;
+    place-items: center;
 }
 
 .hero-iklan {
-    margin-bottom: 40px;
-    padding-left: 30px;
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
+    display: grid;
+    place-items: center;
 }
 
 .iklan {
-    padding: 5px 0;
+    padding: 10px 0;
     font-weight: 500;
     text-transform: uppercase;
 }
 
 .first {
-    font-size: 2em;
-    letter-spacing: 0.8em;
+    font-size: 1.5em;
 }
 .second {
     font-size: 2em;
     font-weight: 600;
-    letter-spacing: 0.32em;
 }
 .third {
-    font-size: 2em;
-    letter-spacing: 0.01em;
+    font-size: 1.5em;
 }
 
 .btn-cta-secondary {
@@ -189,3 +183,207 @@
     transition: background .2s ease .2s;
 }
 /* End hero style */
+
+/* Features style */
+.features {
+    padding: 60px 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.feature-item {
+    padding: 45px 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid rgb(236, 234, 234);
+    box-shadow: 0 2px 4px 0 rgb(236, 234, 234), 0 -2px 4px 0 rgb(236, 234, 234);
+}
+
+.icon {
+    font-size: 2em;
+    font-weight: 700;
+    color: rgb(204, 174, 4);
+}
+
+.feature-desc {
+    font-weight: 600;
+}
+/* End features style */
+
+/* Categories style */
+.categories {
+    padding: 0 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.category {
+    padding: 100px 20px;
+    border-radius: 4px;
+    box-shadow: 0 5px 10px 0 rgb(175, 174, 174), 0 -5px 10px 0 rgb(236, 234, 234);
+    overflow: hidden;
+    text-transform: uppercase;
+    color: rgb(236, 234, 234);
+    font-weight: 500;
+    font-size: 2em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.category:hover {
+    color: rgba(236, 234, 234,0.8);
+}
+.formal {
+    background-image: url("https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.informal {
+    background-image: url("https://images.unsplash.com/photo-1532794083969-72280fadb167?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* End categories style */
+
+
+/* Product style */
+.products {
+    padding: 40px 80px;
+}
+
+.product-header {
+    font-size: 2em;
+    font-weight: 600;
+    border-bottom: 2px solid rgb(228, 228, 228);
+}
+
+.p-header-titile {
+    width: 140px;
+    border-bottom: 3px solid rgb(204, 174, 4);
+}
+
+.product-items {
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product-details {
+    margin-bottom: 20px;
+    min-height: 220px;
+    border-radius: 5px;
+    border: 1px solid rgb(228, 228, 228);
+    overflow: hidden;
+}
+
+.product-link {
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.overlay{
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    position: absolute;
+    top: 5%;
+    margin-left: 10px;
+    width: 70px;
+}
+
+.overlay .fa{
+    margin: 2px 0;
+    cursor: pointer;
+    background-color: rgba(196,128,20,0.8);
+    color: rgba(255, 255, 255, 1);
+    height: 30px;
+    width: 30px;
+    font-size: 15px;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+  
+.overlay .btn-secondary{
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.product-details img {
+    width: 220px;
+    height: 220px;
+}
+.product-name {
+    font-size: 1em;
+    font-weight: 500;
+    color: rgb(29, 28, 28);
+}
+.product-price {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    font-weight: 400;
+    color: rgb(224, 19, 19);
+}
+.product-name, .product-price {
+    padding: 5px;
+}
+
+.product-details:hover {
+    transform: translateY(4px);
+    box-shadow: 0 4px 8px 0 rgba(230, 229, 229, 0.8), 0 -2px 4px 0 rgba(230, 229, 229, 0.8);
+    transition: all .3s ease .2s;
+}
+
+.product-foot {
+    display: grid;
+    place-items: center;
+}
+
+.product-foot a {
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    background-color: rgba(196,128,20,0.8);
+    border-radius: 5px;
+    color: rgba(250,250,250,1);
+    text-decoration: none;
+    box-shadow: 0 4px 8px 0 rgba(204, 204, 204, 0.8)
+}
+.product-foot a:hover {
+    background-color: rgba(196,128,20,1);
+}
+/* End product style */
+
+/* Footer style */
+.footer {
+    padding: 40px 80px;
+    background-color: rgb(29, 28, 28);
+    color: rgba(250,250,250,1);
+    text-align: center;
+    line-height: 2em;
+}
+/* End footer style */
+
+
+
+
+
+
+
+
+
+
+
+
