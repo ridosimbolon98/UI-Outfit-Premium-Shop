@@ -377,6 +377,90 @@
 /* End footer style */
 
 
+/* RESPONSIVE SECTION */
+@media only screen and (max-width: 500px){
+    
+    .navbar{
+        width: 100%;
+        display: flex;
+        padding: 25px;
+    }
+    .nav {
+        display: none;
+    }
+
+    .nav-auth {
+        position: absolute;
+        display: none;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .hero-main {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 2em;
+    }
+    .hero-desc {
+        font-size: 0.9em;
+        line-height: 1.8em;
+    }
+
+    .features {
+        padding: 40px 10px;
+        grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+        gap: 10px;
+    }
+
+    .feature-item {
+        padding: 20px 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .icon {
+        font-size: 1em;
+    }
+    .feature-desc {
+        font-size: 0.7em;
+    }
+
+    .categories {
+        padding: 0 10px;
+        grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+        gap: 10px;
+    }
+
+    .category {
+        padding: 40px;
+    }
+
+    .category-desc {
+        font-size: 0.7em;
+    }
+
+    .products {
+        padding: 40px 10px;
+    }
+
+    .product-items {
+        padding: 20px 10px;
+        grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+        gap: 10px;
+    }
+}
+/* END RESPONSIVE SECTION */
+
 
 
 
